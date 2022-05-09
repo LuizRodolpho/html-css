@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: 'Century Gothic',Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to top right, #3ddc84, #1a5c37);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    min-height: 100px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+}
+
+nav > a {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.25s;
+}
+
+nav > a:hover {
+    color: var(--cor1);
+    background-color: #1a5c37;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.158);
+    margin: auto;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    /*
+    OU 
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ;
+    */
+}
+
+main a {
+    text-decoration: none;
+    color: #1a5c37;
+    background-color: #3ddc84;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
+main a:hover {
+    background-color: #2fa866;
+    transition-duration: 0.5s;
+}
+
+main a:visited {
+    background-color: #1a5c37;
+    color: #3ddc84;
+}
+
+main a:visited:hover {
+    background-color: #2fa866;
+    transition-duration: 0.5s;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: #1a5c37;
+    font-weight: bold;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main  h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    padding-left: 10px;
+}
+
+main  h2 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    padding-left: 15px;
+}
+
+div.video {
+    background-color: #063d1e;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+#aprender {
+    border-radius: 10px;
+    background-color: var(--cor1);
+    padding: 15px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: "\2714\00A0\00A0";
+    columns: 2;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
